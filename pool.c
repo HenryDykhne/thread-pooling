@@ -239,7 +239,13 @@ int main(int argc, char *argv[]) {
 	// number of threads which are idle equals the total number of threads (all
 	// threads are idle)
 	while(1){
-		if ((noMoreTasks == 1) && (numThreadsIdle == tcount) && (queue->qcount == 0)) break; 
+		if ((noMoreTasks == 1) && (numThreadsIdle == tcount) && (queue->qcount == 0)){
+			free(queue -> fn);
+			free(queue);
+			free(poolStruct -> pool);
+			free(poolStruct);
+			break;
+		}
 	};
 
 }
