@@ -1,5 +1,5 @@
-# cis3090a2
-Name: Eli-Henry Dykhne
-Student #: 0996524
+# thread-pooling
+
+run make before running pool.c
 
 Everything in the code should work as expected.
